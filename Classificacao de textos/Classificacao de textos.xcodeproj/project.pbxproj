@@ -25,6 +25,7 @@
 /* Begin PBXFileReference section */
 		E1AD08E21F05BDD300B88431 /* Classificacao de textos */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Classificacao de textos"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1AD08E51F05BDD300B88431 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		E1AD08EC1F05C72E00B88431 /* corpus */ = {isa = PBXFileReference; lastKnownFileType = folder; path = corpus; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +44,7 @@
 			children = (
 				E1AD08E41F05BDD300B88431 /* Classificacao de textos */,
 				E1AD08E31F05BDD300B88431 /* Products */,
+				E1AD08EC1F05C72E00B88431 /* corpus */,
 			);
 			sourceTree = "<group>";
 		};
