@@ -8,13 +8,13 @@
 
 import Foundation
 
-let urlEsporte = URL(fileURLWithPath: "/Users/gabrielmocelin/Documents/Facul/trab 4 IA/Trab-IA-Classifica-o-de-textos/Classificacao de textos/Classificacao de textos/parsed/esporte.json")
+let urlEsporte = URL(fileURLWithPath: "/Users/Uriel/Documents/Facul/Trab-IA-Classifica-o-de-textos/Classificacao de textos/Classificacao de textos/parsed/esporte.json")
 
-let urlPolicia = URL(fileURLWithPath: "/Users/gabrielmocelin/Documents/Facul/trab 4 IA/Trab-IA-Classifica-o-de-textos/Classificacao de textos/Classificacao de textos/parsed/policia.json")
+let urlPolicia = URL(fileURLWithPath: "/Users/Uriel/Documents/Facul/Trab-IA-Classifica-o-de-textos/Classificacao de textos/Classificacao de textos/parsed/policia.json")
 
-let urlProblema = URL(fileURLWithPath: "/Users/gabrielmocelin/Documents/Facul/trab 4 IA/Trab-IA-Classifica-o-de-textos/Classificacao de textos/Classificacao de textos/parsed/problema.json")
+let urlProblema = URL(fileURLWithPath: "/Users/Uriel/Documents/Facul/Trab-IA-Classifica-o-de-textos/Classificacao de textos/Classificacao de textos/parsed/problema.json")
 
-let urlTrabalho = URL(fileURLWithPath: "/Users/gabrielmocelin/Documents/Facul/trab 4 IA/Trab-IA-Classifica-o-de-textos/Classificacao de textos/Classificacao de textos/parsed/trabalho.json")
+let urlTrabalho = URL(fileURLWithPath: "/Users/Uriel/Documents/Facul/Trab-IA-Classifica-o-de-textos/Classificacao de textos/Classificacao de textos/parsed/trabalho.json")
 
 let manager = JsonManager()
 let esporteBagOfWords = manager.readJson(with: urlEsporte,classType: "esporte")
@@ -48,7 +48,10 @@ bagOfWords.append(array: policiaBagofWords)
 bagOfWords.append(array: problemaBagofWords)
 bagOfWords.append(array: trabalhoBagofWords)
 
-//for w in bagOfWords.bag{
-//    print(w)
-//}
+let trainingMatriz = ARFFManager.getMatriz(bag: bagOfWords.bag, textArray: [esporteTrainingTexts, policiaTrainingTexts, problemaTrainingTexts, trabalhoTrainingTexts])
+ARFFManager.writeFile(file: "training.arff", text: trainingMatriz)
 
+let testMatriz = ARFFManager.getMatriz(bag: bagOfWords.bag, textArray: [esporteTestTexts, policiaTestTexts, problemaTestTexts, trabalhoTestTexts])
+ARFFManager.writeFile(file: "test.arff", text: testMatriz)
+
+print("------------ DONE ---------------")

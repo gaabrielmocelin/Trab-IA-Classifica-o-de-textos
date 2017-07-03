@@ -1,5 +1,5 @@
 //
-//  testClass.swift
+//  TrainingClass.swift
 //  Classificacao de textos
 //
 //  Created by Gabriel Mocelin on 02/07/17.
@@ -8,7 +8,7 @@
 
 import Cocoa
 
-class TestClass: NSObject {
+class TextClass: NSObject {
     var texts: [String:[String]] = [:]
     var classType = ""
     
@@ -16,3 +16,7 @@ class TestClass: NSObject {
         texts[key] = value
     }
 }
+
+class TrainingClass: TextClass { }
+
+class TestClass: TextClass { }
