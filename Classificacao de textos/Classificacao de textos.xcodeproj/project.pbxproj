@@ -10,6 +10,8 @@
 		E17004EA1F095CE5008010DC /* JsonManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17004E91F095CE5008010DC /* JsonManager.swift */; };
 		E17004ED1F09851C008010DC /* WordsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17004EC1F09851C008010DC /* WordsManager.swift */; };
 		E17004F01F09B234008010DC /* BagOfWords.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17004EF1F09B234008010DC /* BagOfWords.swift */; };
+		E17004F21F09C51B008010DC /* TestClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17004F11F09C51B008010DC /* TestClass.swift */; };
+		E17004F41F09CDEC008010DC /* TrainingClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17004F31F09CDEC008010DC /* TrainingClass.swift */; };
 		E1AD08E61F05BDD300B88431 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1AD08E51F05BDD300B88431 /* main.swift */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +34,8 @@
 		E17004EC1F09851C008010DC /* WordsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordsManager.swift; sourceTree = "<group>"; };
 		E17004EE1F098672008010DC /* parsedEsportes.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = parsedEsportes.txt; sourceTree = "<group>"; };
 		E17004EF1F09B234008010DC /* BagOfWords.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BagOfWords.swift; sourceTree = "<group>"; };
+		E17004F11F09C51B008010DC /* TestClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestClass.swift; sourceTree = "<group>"; };
+		E17004F31F09CDEC008010DC /* TrainingClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainingClass.swift; sourceTree = "<group>"; };
 		E1AD08E51F05BDD300B88431 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -60,6 +64,8 @@
 				E1AD08E51F05BDD300B88431 /* main.swift */,
 				E17004EF1F09B234008010DC /* BagOfWords.swift */,
 				E17004EC1F09851C008010DC /* WordsManager.swift */,
+				E17004F11F09C51B008010DC /* TestClass.swift */,
+				E17004F31F09CDEC008010DC /* TrainingClass.swift */,
 				E17004E91F095CE5008010DC /* JsonManager.swift */,
 				E17004EE1F098672008010DC /* parsedEsportes.txt */,
 				E17004EB1F0961F4008010DC /* parsed */,
@@ -128,7 +134,9 @@
 			files = (
 				E1AD08E61F05BDD300B88431 /* main.swift in Sources */,
 				E17004F01F09B234008010DC /* BagOfWords.swift in Sources */,
+				E17004F21F09C51B008010DC /* TestClass.swift in Sources */,
 				E17004EA1F095CE5008010DC /* JsonManager.swift in Sources */,
+				E17004F41F09CDEC008010DC /* TrainingClass.swift in Sources */,
 				E17004ED1F09851C008010DC /* WordsManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -17,11 +17,30 @@ let urlProblema = URL(fileURLWithPath: "/Users/gabrielmocelin/Documents/Facul/tr
 let urlTrabalho = URL(fileURLWithPath: "/Users/gabrielmocelin/Documents/Facul/trab 4 IA/Trab-IA-Classifica-o-de-textos/Classificacao de textos/Classificacao de textos/parsed/trabalho.json")
 
 let manager = JsonManager()
-let esporteBagOfWords = manager.readJson(with: urlEsporte)
-let policiaBagofWords = manager.readJson(with: urlPolicia)
-let problemaBagofWords = manager.readJson(with: urlProblema)
-let trabalhoBagofWords = manager.readJson(with: urlTrabalho)
+let esporteBagOfWords = manager.readJson(with: urlEsporte,classType: "esporte")
+//this keep the words of each text that is test
+let esporteTestTexts = manager.testClass
+//this keep the words of each text that is training
+let esporteTrainingTexts = manager.trainingClass
 
+let policiaBagofWords = manager.readJson(with: urlPolicia,classType: "policia")
+let policiaTestTexts = manager.testClass
+let policiaTrainingTexts = manager.trainingClass
+
+let problemaBagofWords = manager.readJson(with: urlProblema,classType: "problema")
+let problemaTestTexts = manager.testClass
+let problemaTrainingTexts = manager.trainingClass
+
+let trabalhoBagofWords = manager.readJson(with: urlTrabalho,classType: "trabalho")
+let trabalhoTestTexts = manager.testClass
+let trabalhoTrainingTexts = manager.trainingClass
+
+//print(esporteTestTexts.texts.count)
+//print(esporteTrainingTexts.texts.count)
+//print(trabalhoTestTexts.texts.count)
+//print(trabalhoTrainingTexts.texts.count)
+
+//the big one
 let bagOfWords = BagOfWords()
 
 bagOfWords.append(array: esporteBagOfWords)
@@ -29,7 +48,7 @@ bagOfWords.append(array: policiaBagofWords)
 bagOfWords.append(array: problemaBagofWords)
 bagOfWords.append(array: trabalhoBagofWords)
 
-for w in bagOfWords.bag{
-    print(w)
-}
+//for w in bagOfWords.bag{
+//    print(w)
+//}
 
