@@ -21,6 +21,4 @@ class BagOfWords: NSObject {
         
       //  print(bag.count)
     }
-    
-
 }
