@@ -33,9 +33,7 @@ class WordsManager: NSObject {
         if exist == false{
             let new = Word(text: word)
             words.append(new)
-        }
-       
-        
+        }  
     }
     
     func MostImportants(n: Int) -> [Word] {
